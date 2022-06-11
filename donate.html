@@ -45,7 +45,7 @@
                     <nav class="header__menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="request.html">Request</a></li>
+                            <li><a href="request.html">Register</a></li>
                             <li class="active"><a href="donate.html">Donate</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="about.html">About</a></li>
@@ -62,26 +62,40 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="contact__form__title">
-                    <h2>Donate!</h2>
+                    <h1>Donate!</h1>
                     <h6>All proceeds will be donated to the Trenton Area Soup Kitchen. <br> All payments are conducted
                         securely via PayPal.</h6>
-                </div>
-                <div class="centeredDiv">
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <div class="centeredDiv">
-                            <input type="hidden" name="business" value="P7FJAPAM9JM8W" />
-                            <input type="hidden" name="no_recurring" value="0" />
-                            <input type="hidden" name="item_name"
-                                value="All proceeds will be donated to the Trenton Area Soup Kitchen (TASK)." />
+                    <br>
+                    <div class="centeredDiv">
+                        <form action="https://www.paypal.com/donate" method="post" target="_top">
                             <div class="centeredDiv">
-                                <input type="hidden" name="currency_code" value="USD" />
-                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                                    border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
-                                    alt="Donate with PayPal button" />
+                                <input type="hidden" name="business" value="P7FJAPAM9JM8W" />
+                                <input type="hidden" name="no_recurring" value="0" />
+                                <input type="hidden" name="item_name"
+                                    value="All proceeds will be donated to the Trenton Area Soup Kitchen (TASK)." />
+                                <div class="centeredDiv">
+                                    <input type="hidden" name="currency_code" value="USD" />
+                                    <input type="image"
+                                        src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                                        name="submit" title="PayPal - The safer, easier way to pay online!"
+                                        alt="Donate with PayPal button" />
+                                </div>
+                                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="100"
+                                    height="100" />
                             </div>
-                            <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="100" height="100" />
-                        </div>
+                        </form>
+                    </div>
+                    <hr>    
+
+                    <h2>Login</h2>
+                    <br>
+                    <form action="">
+                        <input class="loginBox" type="text" id="pwd" name="pwd" placeholder="  Username">
+                        <br><br>
+                        <input class="loginBox" type="password" id="pwd" name="pwd" placeholder="  Password">
                     </form>
+                    <br>
+                    <button type="button" class="primary-btn">Enter</button>
                 </div>
             </div>
         </div>
@@ -98,7 +112,19 @@
     <footer class="footer spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-8">
+                    <div class="footer__widget ">
+                        <h6>Links</h6>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="request.html">Register</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm">
                     <div class="footer__about">
                         <div class="footer__about__logo">
                             <a href="./index.html"><img src="img/logo.png" alt=""></a>
@@ -106,22 +132,11 @@
                         <ul>
                             <li>Address: MontyHacks V</li>
                             <li>Email: hello@rubi.com</li>
+                            <li>Register: register@rubi.com</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
-                    <div class="footer__widget">
-                        <h6>Links</h6>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="request.html">Request</a></li>
-                            <li><a href="donate.html">Donate</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="about.html">About</a></li>
-                    </div>
-                </div>
             </div>
-
         </div>
     </footer>
 

@@ -29,6 +29,20 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+.loginBox {
+	width: 40%;
+	height: 4rem;
+	border: 3px solid black;
+	border-radius: 15px;
+}
+
+.loginBox:focus {
+	width: 40%;
+	height: 4rem;
+	border: 3px solid #ee6969;
+	border-radius: 15px;
+}
+
 
 html,
 body {
@@ -111,6 +125,15 @@ ol {
   Helper CSS
 -----------------------*/
 
+.weightSaved {
+    display: inline;
+	font-weight: 700;
+}
+
+.weightDate {
+    display: inline;
+}
+
 .titleText {
 	font-weight: 700;
 	font-size: 32px;
@@ -120,6 +143,14 @@ ol {
 	margin: auto;
 	width: 50%;
 	/* border: 3px solid green; */
+}
+
+.titleBorder {
+	border: 10px solid #ee6969;
+}
+
+.footerLinks {
+	text-align: right;	
 }
 
 .section-title {
@@ -202,7 +233,7 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: #ee6969;
 }
 
 .loader {
@@ -222,21 +253,21 @@ ol {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #fefefe;
 		border-left-color: transparent;
 	}
 
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #ffffff;
 		border-left-color: transparent;
 	}
 
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #ffffff;
 		border-left-color: transparent;
 	}
 }
@@ -244,19 +275,19 @@ ol {
 @-webkit-keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #ffffff;
 		border-left-color: transparent;
 	}
 
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #ffffff;
 		border-left-color: transparent;
 	}
 
 	100% {
 		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #ffffff;
 		border-left-color: transparent;
 	}
 }
