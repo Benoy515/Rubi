@@ -29,10 +29,10 @@ class Post {
 }
 
 var postList = [
-  new Post("Raw Beef", ['kosher', 'halal', 'nutfree', 'glutenfree'], 'June 11', 3, 'product-1.jpg'),
-  new Post("Bananas", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'June 9', 5, 'product-2.jpg'),
-  new Post("Guava Fruit", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'June 8', 4, 'product-3.jpg'),
-  new Post("Blueberries", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'May 21', 6, 'product-4.jpg'),
+  new Post("Raw Beef", ['kosher', 'halal', 'nutfree', 'glutenfree'], 'June 11st', 3, 'product-1.jpg'),
+  new Post("Bananas", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'June 9th', 5, 'product-2.jpg'),
+  new Post("Guava Fruit", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'June 8th', 4, 'product-3.jpg'),
+  new Post("Blueberries", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'May 2', 6, 'product-4.jpg'),
   new Post("Hamburger", ['kosher', 'halal', 'nutfree', 'glutenfree'], 'June 11', 10, 'product-5.jpg'),
   new Post("Mango", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'June 9', 1, 'product-6.jpg'),
   new Post("Watermelon", ['kosher', 'halal', 'vegetarian', 'nutfree', 'glutenfree'], 'June 5', 3, 'product-7.jpg'),
@@ -54,9 +54,8 @@ console.log("My car is " + myCar.age(year) + " years old.");
 
 let weightSaved = 0;
 
-
-
 const createGrid = function () {
+  // $(".featured__filter").empty()
   for (let i = 0; i < postList.length; i++) {
     obj = postList[i]
     let code = $($.parseHTML(`
@@ -70,6 +69,7 @@ const createGrid = function () {
                             <div class="featured__item__text">
                                 <h5>${obj.food}</h5>
                                 <h6>${obj.weight} Kilograms</h6>
+                                <h6 class="tinyDate">Posted ${obj.date}<h6>
                             </div>
                         </div>
                     </div>
@@ -78,10 +78,12 @@ const createGrid = function () {
   }
 }
 
-
-$(document).on("click", ".claimButton", function() {
-  let itemNum = parseInt(this.className.slice(-1))
-
+$(document).on("click", ".claimButton", function () {
+  let classArr = Array.from(this.className.split(" "))
+  weightSaved+=classArr[1]
+  let itemNum = parseInt(classArr[2].slice[-1])
+  postList.splice(itemNum, 1)
+  this.parentElement.parentElement.parentElement.parentElement.remove()
 })
 
 createGrid()
