@@ -64,7 +64,7 @@ const createGrid = function () {
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/product/${obj.picture}">
                                 <ul class="featured__item__pic__hover">
-                                    <li class="claimButton"><a class="item${i}" href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+                                    <li class="claimButton item${i}"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
                                 </ul>
                             </div>
                             <div class="featured__item__text">
@@ -79,9 +79,8 @@ const createGrid = function () {
 }
 
 
-$(".claimButton").click(function() {
-  alert("js is aids")
-  alert(this.className)
+$(document).on("click", ".claimButton", function() {
+  this.className.slice(-1))
 })
 
 createGrid()
