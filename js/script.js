@@ -80,10 +80,11 @@ const createGrid = function () {
 
 $(document).on("click", ".claimButton", function () {
   let classArr = Array.from(this.className.split(" "))
-  weightSaved+=classArr[1]
+  weightSaved+=parseInt(classArr[1])
   let itemNum = parseInt(classArr[2].slice[-1])
   postList.splice(itemNum, 1)
   this.parentElement.parentElement.parentElement.parentElement.remove()
+  $(".weightSaved").text(weightSaved.toString() + " kg")
 })
 
 createGrid()
