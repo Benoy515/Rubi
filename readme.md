@@ -1,4 +1,4 @@
-# Rubi | Connecting the Excess to the Need
+# Rubi | Connecting the Excess to those in Need
 
 https://dashaputra.net/Rubi
 
