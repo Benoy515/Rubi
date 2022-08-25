@@ -1,5 +1,5 @@
 # Rubi | Connecting the Excess to those in Need
 
-https://dashaputra.net/Rubi
+https://benoy515.github.io/Rubi/
 
 ![RUBI](/img/logo.png)
